@@ -1,4 +1,4 @@
-//Defining a module named circuit_1 with inputs a, b, c and output o
+//Defining a module named circuit_1 with inputs a, b, c, and output o
 module circuit_1(a, b, c, o);
     input a;
     input b;
