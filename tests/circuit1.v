@@ -17,4 +17,3 @@ module circuit_1(a, b, c, o);
     or   #(3) g4 (o, z, c);
 
 endmodule;
-

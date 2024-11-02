@@ -4,7 +4,7 @@ class simulator:
     def __init__(self, c, e):
         self.circuit = c  
         self.stim_events = e  
-        self.event_queue = []  
+        self.event_queue = []  # priority queue
         self.signal_values = {}  # dictionary storing the variables and their values
         self.sim_output = []  # stores the output events
 
@@ -23,22 +23,19 @@ class simulator:
 
     def process(self, time, var, new_value):
         variable = [gate.display() for gate in self.circuit.gates]
-        print(variable)
         if self.signal_values[var] != new_value:
             self.signal_values[var] = new_value # assign new value to the variable
             self.sim_output.append((time, var, new_value)) # add the new change to the output file
-            print(time,var,new_value)
             # look for all gates impacted by variable change
             changed_gates = [gate for gate in self.circuit.gates if var in (gate.inputs)]  # a gate is affected if it has the variable as an input
             for gate in changed_gates:
-                print(gate.inputs)
+             
                 self.propagate(gate, time)
 
     def propagate(self, gate, current_time):
         gate_type, delay_time, inputs, output = gate.gate_type, gate.delay_time, gate.inputs, gate.output
     
         # get current inputs of the gate
-        print("my inputs",inputs)
         current_inputs = [self.signal_values[input_signal] for input_signal in inputs] 
         # get new output value depending on the type of gate
         new_output = self.output_gate(gate_type, current_inputs)

@@ -49,11 +49,9 @@ def parse_module(v_file):
             if inputregex.match(line):
                 inputs = inputregex.match(line).group(1)
                 input_names = inputs.split(',') # split inputs by comma into list
-                print("dina",input_names)
 
                 for inp in input_names:
                     input_arr.append(inp.strip()) # add the inputs to the list after striping
-                print(input_arr)
                 circuit.inputs.extend(input_arr) 
             
             elif outputregex.match(line):
