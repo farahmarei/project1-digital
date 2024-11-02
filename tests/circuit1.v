@@ -7,10 +7,10 @@ module circuit_1(a, b, c, o);
     output o;
 
     # Internal wires to connect gates
-    wire w; //Intermediate wire for NAND gate output
-    wire y; //Intermediate wire for XOR gate output
-    wire n; //Intermediate wire for AND gate output
-    wire z; //Intermediate wire for NOR gate output
+    wire w; # Intermediate wire for NAND gate output
+    wire y; # Intermediate wire for XOR gate output
+    wire n; # Intermediate wire for AND gate output
+    wire z; # Intermediate wire for NOR gate output
 
     # Instantiate gates with specific delays
     nand #(4) g0 (w, a, b); # NAND gate with delay of 4, output connected to w, inputs a and b
