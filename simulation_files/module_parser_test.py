@@ -1,4 +1,4 @@
-# parse the module
+# parse the module (for testing)
 
 from module_parser import parse_module
 

@@ -17,7 +17,7 @@ def parse_stim(stimuli_file):
 
     with open(stim.stimuli_file , 'r') as file:
         lines = file.readlines()
-        for l in lines: # iterating through every line, stripping it
+        for l in lines: # iterating through every line and stripping it
             line = l.strip()
 
             match =re.match(eventregex,line) # attempting to match the line to the regex pattern

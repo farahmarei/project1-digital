@@ -8,7 +8,7 @@ class Gate:
         self.output = o
         
     def display(self):
-        # Displaying the gate details
+        # Displaying all gate details
         return f"Gate(name={self.gate_name}, type={self.gate_type}, delay={self.delay_time}, inputs={self.inputs}, output={self.output})"
         
         
