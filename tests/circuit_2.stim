@@ -1,11 +1,16 @@
-#0 a=0;
-#0 b=0;
-#0 c=0;
-#400 a=1;
-#800 b=1;
-#1200 c=1;
-#1600 a=0;
-#2000 b=0;
-#2400 a=1;
-#2800 b=1;
-#3200 c=0;
+//circuit_2.stim file
+
+#0 a=0; //At time 0, set input a to 0
+#0 b=0; //At time 0, set input b to 0
+#0 c=0; //At time 0, set input c to 0
+
+#400 a=1; //At time 400, set input a to 1
+#800 b=1; //At time 800, set input b to 1
+#1200 c=1; //At time 1200, set input c to 1
+
+#1600 a=0; //At time 1600, set input a to 0
+#2000 b=0; //At time 2000, set input b to 0
+
+#2400 a=1; //At time 2400, set input a to 1
+#2800 b=1; //At time 2800, set input b to 1
+#3200 c=0; //At time 3200, set input c to 0
