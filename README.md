@@ -1,5 +1,5 @@
 # project1-digital
 
-This digital Design's first project, 
+Digital Design 1 Project 1:
 Group members : 
-Farah Marei , Hana Shehab  and Joudy El Gayar
+Farah Marei , Hanna Mostafa,  and Joudy El Gayar
