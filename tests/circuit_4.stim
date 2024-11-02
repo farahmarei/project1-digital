@@ -1,11 +1,16 @@
-#0 a=0;
-#0 b=0;
-#0 c=0;
-#300 a=1;
-#600 b=1;
-#900 c=1;
-#1200 a=0;
-#1500 b=0;
-#1800 a=1;
-#2100 b=1;
-#2400 c=0;
+//circuit_4.stim file
+
+#0 a=0; //At time 0, set input a to 0
+#0 b=0; //At time 0, set input b to 0
+#0 c=0; //At time 0, set input c to 0
+
+#300 a=1; //At time 300, set input a to 1
+#600 b=1; //At time 600, set input b to 1
+#900 c=1; //At time 900, set input c to 1
+
+#1200 a=0; //At time 1200, set input a to 0
+#1500 b=0; //At time 1500, set input b to 0
+
+#1800 a=1; //At time 1800, set input a to 1
+#2100 b=1; //At time 2100, set input b to 1
+#2400 c=0; //At time 2400, set input c to 0
